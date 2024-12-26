@@ -1,0 +1,24 @@
+<body style="background-color: rgb(3, 166, 166);">
+    <center>
+    <h1 style="color: rgb(2, 59, 71)">Hi There!</h1>
+    <script>
+        var a = 10;
+        var b = 20;
+        var c = 30;
+        console.log(a)
+        console.log(b)
+        console.log(c)
+        console.log(`a+b+c = ${a + b + c} ok`)  //string interpolation
+        console.log('a+b+c = ' + (a + b + c) + ' ok') //string concatination
+        var arr = [4,5,8,7]
+        function addition(arr){
+            var sum = 0;
+            arr.forEach(element => {
+                sum += element;
+            });
+            return sum;
+        }
+        console.log('sum of array = ' + addition(arr))
+    </script>
+</center>
+</body>
