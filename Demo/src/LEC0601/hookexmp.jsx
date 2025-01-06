@@ -1,6 +1,8 @@
-import { userState } from "react";
+import { useState } from "react";
 function StatesExample() {
-    const [name] = userState("RKU");
-    return <div>{name}</div>;
+    const [name] = useState("RKU");
+    return (
+    <div>{name}</div>
+);
 }
 export default StatesExample;
