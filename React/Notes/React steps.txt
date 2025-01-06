@@ -1,0 +1,29 @@
+[1] npm create vite@latest
+[2] y 
+[3] react 
+[4] javascript
+
+[5] open the folder in vs code
+[6] open new terminal and write npm install
+
+devDependencies -> Developer Dependencies [the libraries needed for the project]
+
+
+TO run the project use -> npm run dev
+
+_____________________________________________________________________________________________________________
+
+React Project installation and Execution steps: 
+
+1. Install Node.js (Check path variable with installation is going on)
+2. verify install by running "node -v" (close VS code)
+3. SetExecutionPolicy Unrestricted (run vscode as an administrator)
+4. npm install vite
+5. npm create vite@latest (this command will create a new project)
+6. enter project name 
+7. enter package name
+8. select "React"
+9. select "JavaScript"
+10. open project directory in vs code.
+11. "npm install"
+12. "npm run dev"

@@ -1,0 +1,7 @@
+npm init -y -> this will create a new node js folder which will tell yes to each and every question and create a new project by allowing everything 
+
+npm i express -> this will install express for the particular folder where we are working, and if we want to install globally then we need to write - g for it 
+
+
+
+

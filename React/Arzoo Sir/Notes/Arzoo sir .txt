@@ -1,0 +1,11 @@
+[1] create a function to find out addition of all the element of give array 
+
+[2] create a function which can double value of given array
+
+[3] From the given array create even array 
+
+[4] create end point / student to dispay student name 
+
+[5] create end point / University to dispay University name 
+
+[6] create end point / College to dispay College name 

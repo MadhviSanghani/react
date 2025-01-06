@@ -1,0 +1,37 @@
+class component lifecycle 
+Their are 4 main events: 
+1. Initialization: declare all the variable 
+2. Mounting 
+3. Updation
+4. Unmounting 
+
+
+_______________________________________________________________________________________________________________
+
+React main.jsx file 
+
+
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+
+// import Slogger1 from "./assets/Slogger_lecture/Slogger1";  
+// import HTMLComponent from "./assets/Slogger_lecture_2/HTMLComponent";  
+// import Timetable from "./assets/Timetable/timetable";  
+// import StateABC from "./assets/statemgmt/statemgmt";
+import Statexyz from "./assets/statemanagement2/statemanagement2";
+
+// 1. class based component
+// 2. functional component
+// JSX Javascript XML
+// <DIV> JavaScript element in uppercase
+// <div> HTML element in lowercase
+
+createRoot(document.getElementById("root")).render(
+  <StrictMode>
+    {/* <StateABC /> */}
+    {/* <Timetable /> */}
+    
+    <Statexyz />
+  </StrictMode>
+);
+

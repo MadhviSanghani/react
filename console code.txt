@@ -1,0 +1,99 @@
+var b = 10;
+undefined
+
+let c = 50
+undefined
+
+const a = 50
+undefined
+
+b
+10
+
+c
+50
+
+a
+50
+
+a = 42
+VM467:1 Uncaught TypeError: Assignment to constant variable.
+    at <anonymous>:1:3
+(anonymous) @ VM467:1Understand this errorAI
+
+typ
+VM478:1 Uncaught ReferenceError: typ is not defined
+    at <anonymous>:1:1
+(anonymous) @ VM478:1Understand this errorAI
+
+typeof a
+'number'
+
+typeof b
+'number'
+
+typeof c
+'number'
+
+b+c
+60
+
+b = 'ABC'
+'ABC'
+
+typeof b
+'string'
+
+b+c
+'ABC50'
+
+b*c
+NaN
+
+users = {'name':'Madhvi', 'city':'Rajkot'}
+{name: 'Madhvi', city: 'Rajkot'}
+
+users.name
+'Madhvi'
+
+users.name = 'priyal'
+'priyal'
+
+users
+{name: 'priyal', city: 'Rajkot'}
+
+typeof users
+'object'
+
+arr = [1,2,3]
+(3) [1, 2, 3]
+
+typeof arr
+'object'
+
+arr[2] = 'Hey'
+'Hey'
+
+arr
+(3) [1, 2, 'Hey']
+
+arr[1] = [3,true,'b','hey there']
+(4) [3, true, 'b', 'hey there']
+
+arr
+(3) [1, Array(4), 'Hey']
+
+arr[1][2]
+'b'
+
+arr[0][0]
+undefined
+
+typeof true
+'boolean'
+
+typeof('true')
+'string'
+
+typeof 'true'
+'string'
