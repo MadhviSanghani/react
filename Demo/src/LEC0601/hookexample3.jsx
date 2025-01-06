@@ -2,7 +2,7 @@ import { useState } from 'react';
 
 function StateExample3() {
     const [color, setColor] = useState("green");
-    const [textweight, setTextweight] = useState("none");
+    const [textweight, setTextweight] = useState("normal");
     const [textstyle, setTextstyle] = useState("normal");
     const [unserline, setUnderline] = useState("none");
 
@@ -20,7 +20,7 @@ function StateExample3() {
             />
             <label>Blue</label>
             <br />
-            <input type="checkbox" name="bold" onChange={(e) => setTextweight(e.target.checked ? "bold" : "none")} 
+            <input type="checkbox" name="bold" onChange={(e) => setTextweight(e.target.checked ? "bold" : "normal")} 
             />
             <label>bold</label>
             <br />
