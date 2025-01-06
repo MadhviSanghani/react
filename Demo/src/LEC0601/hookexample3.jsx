@@ -2,57 +2,33 @@ import { useState } from 'react';
 
 function StateExample3() {
     const [color, setColor] = useState("green");
-    const [textweight, setTextweight] = useState("");
-    const [textstyle, setTextstyle] = useState("");
-    const [unserline, setUnderline] = useState("");
+    const [textweight, setTextweight] = useState("none");
+    const [textstyle, setTextstyle] = useState("normal");
+    const [unserline, setUnderline] = useState("none");
 
     return (
         <div>
-            <input 
-                type="radio" 
-                name="color" 
-                value="Yellow" 
-                checked={color === "Yellow"} 
-                onChange={() => setColor("Yellow")} 
+            <input type="radio" name="color" value="Yellow" onChange={() => setColor("Yellow")} 
             />
             <label>Yellow</label>
             <br />
-            <input 
-                type="radio" 
-                name="color" 
-                value="Red" 
-                checked={color === "Red"} 
-                onChange={() => setColor("Red")} 
+            <input type="radio" name="color" value="Red" onChange={() => setColor("Red")} 
             />
             <label>Red</label>
             <br />
-            <input 
-                type="radio" 
-                name="color" 
-                value="Blue" 
-                checked={color === "Blue"} 
-                onChange={() => setColor("Blue")} 
+            <input type="radio" name="color" value="Blue" onChange={() => setColor("Blue")} 
             />
             <label>Blue</label>
             <br />
-            <input 
-            type="radio" 
-            name="bold"
-            onChange={() => setTextweight("bold")} 
+            <input type="checkbox" name="bold" onChange={(e) => setTextweight(e.target.checked ? "bold" : "none")} 
             />
             <label>bold</label>
             <br />
-            <input 
-            type="radio" 
-            name="italic"
-            onChange={() => setTextstyle("italic")} 
+            <input type="checkbox" name="italic" onChange={(e) => setTextstyle(e.target.checked ? "italic" : "normal")} 
             />
             <label>italic</label>
             <br />
-            <input 
-            type="radio" 
-            name="underline"
-            onChange={() => setUnderline("underline")} 
+            <input type="checkbox" name="underline" onChange={(e) => setUnderline(e.target.checked ? "underline" : "none")} 
             />
             <label>underline</label>
             <br />
