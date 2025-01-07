@@ -4,7 +4,7 @@ function StateExample3() {
     const [color, setColor] = useState("green");
     const [textweight, setTextweight] = useState("normal");
     const [textstyle, setTextstyle] = useState("normal");
-    const [unserline, setUnderline] = useState("none");
+    const [underline, setUnderline] = useState("none");
 
     return (
         <div>
@@ -32,7 +32,7 @@ function StateExample3() {
             />
             <label>underline</label>
             <br />
-            <p style={{ color: color, fontWeight: textweight, fontStyle: textstyle, textDecoration:unserline}}>This is the text content for display.</p>
+            <p style={{ color: color, fontWeight: textweight, fontStyle: textstyle, textDecoration:underline}}>This is the text content for display.</p>
         </div>
     );
 }
