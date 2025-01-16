@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import CharacterCount from './LEC0701/exercise4'
+import ToggleTextVisibility from './LEC0701/exercise3'
 
 
 // 1. class based implementation
@@ -10,6 +10,6 @@ import CharacterCount from './LEC0701/exercise4'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <CharacterCount />
+    <ToggleTextVisibility />
   </StrictMode>,
 )
