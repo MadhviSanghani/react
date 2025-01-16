@@ -15,17 +15,26 @@ var students = [
   },
 ];
 
-//for add the students
 
-
+//fetch students
 app.get("/", (req, res) => res.json(students));
 
 // creating api for add students
 app.post("/", (req, res) => {
-    const {enrollment_no, name, branch, div, roll_no} = req.body;
-    students = [...students, {enrollment_no, name, branch, div, roll_no}];
+    const {enrollment_no, name, branch, sem, div, roll_no} = req.body;
+    students = [...students, {enrollment_no, name, branch, sem, div, roll_no}];
     res.json(students);
 });
+
+//to update students
+app.put("/:enrollment_no", (req, res) => {
+    const enrollment_no = req.params.enrollment_no;
+    const {name, branch, sem, div, roll_no} = req.body;
+    students = students.map((student) => student.enrollment_no == enrollment_no
+     ? {enrollment_no, name, branch, sem, div, roll_no} 
+     : student) //map used for iterate element and represent it as array
+     res.json(students);
+})
 
 app.listen(port, () =>
   console.log(`Server Started at http://localhost:${port}!`)
