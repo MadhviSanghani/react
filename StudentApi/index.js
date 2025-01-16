@@ -34,14 +34,21 @@ app.put("/:enrollment_no", (req, res) => {
      ? {enrollment_no, name, branch, sem, div, roll_no} 
      : student) //map used for iterate element and represent it as array
      res.json(students);
-})
+});
 
 //to delete students
 app.delete("/:enrollment_no", (req, res) => {
     const enrollment_no = req.params.enrollment_no;
     students = students.filter((student) => student.enrollment_no != enrollment_no);
      res.json(students);
-})
+});
+
+// to get a student by enrollment no
+app.get("/:enrollment_no", (req, res) => {
+    const enrollment_no = req.params.enrollment_no;
+    var students_out = students.filter((student) => student.enrollment_no == enrollment_no);    //filter will return array of students
+     res.json(students_out);
+});
 
 
 app.listen(port, () =>
