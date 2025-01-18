@@ -1,6 +1,6 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import ToggleTextVisibility from './LEC0701/exercise3'
+import ApiSimulation from './LEC0801/hookuseeffect'
 
 
 // 1. class based implementation
@@ -10,6 +10,6 @@ import ToggleTextVisibility from './LEC0701/exercise3'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <ToggleTextVisibility />
+    <ApiSimulation />
   </StrictMode>,
 )
