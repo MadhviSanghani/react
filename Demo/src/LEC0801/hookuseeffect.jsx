@@ -1,30 +1,30 @@
 import * as React from 'react';
-function fetchuserData() {
-    return new Promise((resolve) => {
-        setTimeout(() => {
-            resolve({x:'Madhvi Sanghani', y:1});  
-        }, 5000);
-    });
-}
 
-function ApiSimulation() {
-    const [name, setName] = React.useState("Loading...");
-    const [id, setId] = React.useState("Loading...");
+function CountdownTimer() {
+    const [timeLeft, setTimeLeft] = React.useState(300); // 5 minutes in seconds
+
     React.useEffect(() => {
-        fetchuserData().then((abc) => {
-            setName(abc.x);
-            setId(abc.y);
-        });
-    });
+        if (timeLeft > 0) {
+            const timer = setTimeout(() => {
+                setTimeLeft((prev) => prev - 1);
+            }, 1000);
+
+            return () => clearTimeout(timer); // Cleanup timeout on re-render or unmount
+        }
+    }, [timeLeft]);
+
+    const formatTime = (seconds) => {
+        const minutes = Math.floor(seconds / 60);
+        const secs = seconds % 60;
+        return `${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+    };
 
     return (
         <div>
-            <h2>Name: {name}</h2>
-            <h2>Id: {id}</h2>
+            <h2>Countdown Timer</h2>
+            <h2>Time Left: {formatTime(timeLeft)}</h2>
         </div>
-     );
+    );
 }
 
-export default ApiSimulation;
-
-
+export default CountdownTimer;
