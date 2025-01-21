@@ -1,30 +1,38 @@
-import * as React from 'react';
+// 1.useEffect is for managing side effects in functional components.
+// 2. Dependencies array ([]) controls when the effect runs:
+// 3. []: Runs once after the initial render.
+// 4. [var1, var2]: Runs whenever var1 or var2 changes.
+// 5. Omission of []: Runs on every render.
+// 6. For your use case (fetching data), you should include [] to avoid repeated API calls.
 
-function CountdownTimer() {
-    const [timeLeft, setTimeLeft] = React.useState(300); // 5 minutes in seconds
 
-    React.useEffect(() => {
-        if (timeLeft > 0) {
-            const timer = setTimeout(() => {
-                setTimeLeft((prev) => prev - 1);
-            }, 1000);
 
-            return () => clearTimeout(timer); // Cleanup timeout on re-render or unmount
-        }
-    }, [timeLeft]);
+import * as React from "react";
+ function fetchuserData (){
+    return new Promise((resolve) => {
+        setTimeout(()=>{
+            resolve({x:"RKu Student",y:1});
+        },5000);
+    });
+ }
 
-    const formatTime = (seconds) => {
-        const minutes = Math.floor(seconds / 60);
-        const secs = seconds % 60;
-        return `${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
-    };
+ function ApiSimulation(){
+    const [name ,setName] = React.useState("Loading......");
+    const [id ,setId] = React.useState("Loading,");
+    React.useEffect(() =>{
+        fetchuserData().then((abc)=>{
+            setName(abc.x);
+            setId(abc.y);
+        });
+    });
 
-    return (
+    return(
         <div>
-            <h2>Countdown Timer</h2>
-            <h2>Time Left: {formatTime(timeLeft)}</h2>
+            User:{name}
+            <br/>
+            Id: {id}
         </div>
     );
-}
+ }
 
-export default CountdownTimer;
+ export default ApiSimulation;
