@@ -2,7 +2,9 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 // import Carousal from './LEC2001/imageChanger'
 // import CancelRequest from './LEC2101/cleanup'
-import CustomComp from './LEC2101/compo1'
+// import CustomComp from './LEC2101/compo1'
+// import Registration from './LEC2101/exercise1'
+import Display from './LEC2101/exercise1'
 // import StringList from './LEC0801/StringArray'
 // import CountdownTimer from './LEC0801/timer'
 // import ApiSimulation from './LEC0801/hookuseeffect'
@@ -27,7 +29,11 @@ createRoot(document.getElementById('root')).render(
 
     {/* <CancelRequest/> */}
 
-    <CustomComp/>
+    {/* <CustomComp/> */}
+
+    {/* <Registration/> */}
+
+    <Display/>
 
   </StrictMode>,
 )
