@@ -1,5 +1,5 @@
 import React from 'react';
-import Himg from "../../public/rasengan.webp";
+import Himg from "../../public/boat.png";
 
 function Heroimage() {
   return (

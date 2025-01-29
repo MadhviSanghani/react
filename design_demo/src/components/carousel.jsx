@@ -1,8 +1,8 @@
 import React from "react";
-import image1 from "../../public/d kiba.jpg";
-import image2 from "../../public/d naruto.jpg";
-import image3 from "../../public/d shinigami.jpg";
-import image4 from "../../public/sasuke.jpg";
+import image1 from "../../public/bird.jpg";
+import image2 from "../../public/moon.jpg";
+import image3 from "../../public/flower.jpeg";
+import image4 from "../../public/tree.jpg";
 
 function Carousel() {
   return (

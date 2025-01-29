@@ -5,9 +5,7 @@ function Navbar() {
     <div>
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a className="navbar-brand" href="#">
-            Navbar
-          </a>
+         
           <button
             className="navbar-toggler"
             type="button"
