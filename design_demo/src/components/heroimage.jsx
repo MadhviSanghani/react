@@ -5,7 +5,7 @@ function Heroimage() {
   return (
     <div>
         <center>
-        <img src={Himg} alt="" width={900} height={600} />
+        <img src={Himg} alt="" width={1200} height={600} />
         </center>
     </div>
   )
