@@ -1,4 +1,7 @@
-import React from 'react'
+import image1 from '../../public/facebook.png';
+import image2 from '../../public/twitter.png';
+import image3 from '../../public/instagram.svg';
+import image4 from '../../public/linkedin.webp';
 
 function Footer() {
   return (
@@ -7,10 +10,10 @@ function Footer() {
             <div className='col-md-4'>
                 <h3>Quick links</h3>
                 <ul>
-                    <li><a href="#">home</a></li>
-                    <li><a href="#">galerry</a></li>
-                    <li><a href="#">aboutus</a></li>
-                    <li><a href="#">login</a></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Gallary</a></li>
+                    <li><a href="#">Aboutus</a></li>
+                    <li><a href="#">Login</a></li>
                 </ul>
             </div>
             <div className='col-md-4'>
@@ -21,10 +24,10 @@ function Footer() {
             </div>
             <div className='col-md-4'>
                 <h3>Follow us</h3>
-                <li><a href="#"><img src="facebook.png" alt="facebook" /></a></li>
-                <li><a href="#"><img src="twitter.png" alt="twitter" /></a></li>
-                <li><a href="#"><img src="instagram.png" alt="instagram" /></a></li>
-                <li><a href="#"><img src="linkedin.png" alt="linkedin" /></a></li>
+                <a href="https://www.facebook.com/"><img src={image1} alt="facebook" width={60} height={40}/></a>
+                <a href="https://x.com/?lang=en"><img src={image2} alt="twitter" width={40} height={34}/></a>
+                <a href="https://www.instagram.com/"><img src={image3} alt="instagram" width={40} height={30}/></a>
+                <a href="https://in.linkedin.com/"><img src={image4} alt="linkedin" width={40} height={40}/></a>
             </div>
         </div>
     </div>

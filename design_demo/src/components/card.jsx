@@ -1,7 +1,6 @@
-import React from "react";
 import image1 from "../../public/d kiba.jpg";
 import image2 from "../../public/d naruto.jpg";
-import image3 from "../../public/d shinigami.jpg";
+import image3 from "../../public/sasuke.jpg";
 
 function Card() {
   return (
@@ -43,7 +42,7 @@ function Card() {
           <div className="card">
             <img src={image3} className="card-img-top" alt="..." width={300} height={500}></img>
             <div className="card-body">
-              <h5 className="card-title">Shinigami</h5>
+              <h5 className="card-title">Sasuke</h5>
               <p className="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the cards content.

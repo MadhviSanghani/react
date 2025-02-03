@@ -1,11 +1,19 @@
-import React from "react";
+import img from '../../public/mlogo.png';
 
 function Navbar() {
   return (
     <div>
       <header>
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-         
+        <nav className="navbar navbar-expand-lg navbar-dark bg-dark text-white">
+          <a className="navbar-brand" href="#">
+            <img className='rounded-circle'
+              src={img}
+              alt=""
+              width={50}
+              height={50}
+            ></img>
+          </a>
+
           <button
             className="navbar-toggler"
             type="button"
@@ -26,7 +34,7 @@ function Navbar() {
               </li>
               <li className="nav-item">
                 <a className="nav-link" href="#">
-                  Gallery
+                  Gallary
                 </a>
               </li>
               <li className="nav-item">

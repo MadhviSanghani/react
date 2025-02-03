@@ -5,6 +5,7 @@ import { createRoot } from 'react-dom/client'
 // import CustomComp from './LEC2101/compo1'
 // import Registration from './LEC2101/exercise1'
 import Display from './LEC2101/exercise1'
+import UserContextExample from './LEC0302/File3'
 // import StringList from './LEC0801/StringArray'
 // import CountdownTimer from './LEC0801/timer'
 // import ApiSimulation from './LEC0801/hookuseeffect'
@@ -33,7 +34,9 @@ createRoot(document.getElementById('root')).render(
 
     {/* <Registration/> */}
 
-    <Display/>
+    {/* <Display/> */}
+
+    <UserContextExample/>
 
   </StrictMode>,
 )
