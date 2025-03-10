@@ -1,0 +1,29 @@
+Database connection using MySQL
+create node endpoint(api) which can perform curd operation of product and get category where one category have multiplae products and one product belong to single category
+
+one to many, many to one
+
+orm - object relational mapping
+
+sequelize
+don't need server
+supporting their own kind of datatype
+
+
+model
+is a class which represent object based functions
+
+mysql vs oracle
+securety parameters different
+name different
+
+postgres
+
+model
+represent database structure
+
+controller
+validate
+
+services
+communicate with data
