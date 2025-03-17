@@ -6,6 +6,7 @@ import { createRoot } from 'react-dom/client'
 // import Registration from './LEC2101/exercise1'
 // import Display from './LEC2101/exercise1'
 import ReducerExmp from './LEC2402/usereducerexp'
+import ReducerDependency from './LEC1003/reducerexp2'
 // import UserContextExample from './LEC0302/File3'
 // import StringList from './LEC0801/StringArray'
 // import CountdownTimer from './LEC0801/timer'
@@ -39,7 +40,9 @@ createRoot(document.getElementById('root')).render(
 
     {/* <UserContextExample/> */}
 
-    <ReducerExmp/>
+    {/* <ReducerExmp/> */}
+
+    <ReducerDependency/>
 
   </StrictMode>,
 )
